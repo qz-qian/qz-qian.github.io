@@ -742,10 +742,10 @@ h1 {
 }
 
 .experience-period {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.1rem;
-  padding: 0.45rem 0.82rem;
+  display: inline-grid;
+  gap: 0.08rem;
+  min-height: auto;
+  padding: 0.5rem 0.82rem 0.48rem;
   border-radius: 999px;
   border: 1px solid rgba(47, 98, 217, 0.14);
   background: linear-gradient(180deg, #f2f6ff 0%, #e9f0ff 100%);
@@ -755,6 +755,11 @@ h1 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+.experience-period-start,
+.experience-period-end {
+  display: block;
 }
 
 .experience-body {
