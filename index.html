@@ -20,44 +20,79 @@
 <body>
   <div class="page-shell">
     <header class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Research Homepage</p>
-        <h1>Tianyu Fan</h1>
-        <p class="hero-role">Ph.D. Student in Computer Science, The University of Hong Kong</p>
-        <p class="hero-summary">
-          I work on LLMs, autonomous agents, and retrieval-augmented generation, with a current focus on
-          practical systems that make advanced reasoning more accessible and efficient.
-        </p>
-        <div class="hero-actions">
-          <a href="./papers/TianyuFan_CV__26_03_15_.pdf">View CV</a>
-          <a href="https://scholar.google.com/citations?user=0lOPzTwAAAAJ">Google Scholar</a>
-          <a href="https://github.com/TianyuFan0504/">GitHub</a>
-          <a href="https://www.linkedin.com/in/tianyu-fan-a188b32b8/">LinkedIn</a>
-        </div>
-        <dl class="hero-meta">
-          <div>
-            <dt>Affiliation</dt>
-            <dd><a href="https://www.cs.hku.hk/">Department of Computer Science</a>, <a href="https://www.hku.hk/">HKU</a></dd>
-          </div>
-          <div>
-            <dt>Email</dt>
-            <dd>tianyufan0504 AT gmail.com</dd>
-          </div>
-          <div>
-            <dt>Advisors</dt>
-            <dd>
-              <a href="https://sites.google.com/view/chaoh/home">Prof. Chao Huang</a> and
-              <a href="https://scholar.google.com.hk/citations?user=TwSParMAAAAJ&amp;hl=en">Prof. Benjamin C.M. Kao</a>
-            </dd>
-          </div>
-        </dl>
-      </div>
+      <nav class="hero-nav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#news">News</a>
+      </nav>
 
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Research Homepage</p>
+          <h1>Tianyu Fan</h1>
+          <p class="hero-role">Ph.D. Student in Computer Science, The University of Hong Kong</p>
+          <p class="hero-summary">
+            I work on LLMs, autonomous agents, and retrieval-augmented generation, with a current focus on
+            practical systems that make advanced reasoning more accessible and efficient.
+          </p>
+          <div class="hero-signals" aria-label="Research areas">
+            <span>LLMs</span>
+            <span>Autonomous Agents</span>
+            <span>RAG Systems</span>
+          </div>
+          <div class="hero-actions">
+            <a href="./papers/TianyuFan_CV__26_03_15_.pdf">View CV</a>
+            <a href="https://scholar.google.com/citations?user=0lOPzTwAAAAJ">Google Scholar</a>
+            <a href="https://github.com/TianyuFan0504/">GitHub</a>
+            <a href="https://www.linkedin.com/in/tianyu-fan-a188b32b8/">LinkedIn</a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Affiliation</dt>
+              <dd><a href="https://www.cs.hku.hk/">Department of Computer Science</a>, <a href="https://www.hku.hk/">HKU</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd>tianyufan0504 AT gmail.com</dd>
+            </div>
+            <div>
+              <dt>Advisors</dt>
+              <dd>
+                <a href="https://sites.google.com/view/chaoh/home">Prof. Chao Huang</a> and
+                <a href="https://scholar.google.com.hk/citations?user=TwSParMAAAAJ&amp;hl=en">Prof. Benjamin C.M. Kao</a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-aside">
+          <article class="hero-card hero-card--primary">
+            <p class="hero-card-label">Current Focus</p>
+            <p class="hero-card-title">Practical systems for research-grade AI</p>
+            <p class="hero-card-copy">
+              Making advanced reasoning workflows more accessible through open-source systems, applied research,
+              and efficient tooling.
+            </p>
+          </article>
+
+          <article class="hero-card">
+            <p class="hero-card-label">Quick Start</p>
+            <div class="hero-link-stack">
+              <a href="#publications">Read selected publications</a>
+              <a href="#projects">Browse open-source projects</a>
+              <a href="#news">See the latest updates</a>
+            </div>
+          </article>
+        </aside>
+      </div>
     </header>
 
     <main class="layout">
       <section class="main-column">
-        <section class="section intro-block">
+        <div class="intro-grid">
+        <section id="about" class="section intro-block section--intro">
           <div class="section-heading">
             <h2>About</h2>
           </div>
@@ -70,7 +105,7 @@
           </p>
         </section>
 
-        <section class="section">
+        <section id="education" class="section section--education">
           <div class="section-heading">
             <h2>Education</h2>
           </div>
@@ -97,8 +132,9 @@
             </article>
           </div>
         </section>
+        </div>
 
-        <section class="section project-feature">
+        <section id="projects" class="section project-feature section--projects">
           <div class="section-heading">
             <h2>Open-Source Projects</h2>
           </div>
@@ -163,7 +199,7 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="publications" class="section section--publications">
           <div class="section-heading">
             <h2>Publications</h2>
           </div>
@@ -286,7 +322,7 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="experience" class="section section--experience">
           <div class="section-heading">
             <h2>Experiences</h2>
           </div>
@@ -323,7 +359,8 @@
           </div>
         </section>
 
-        <section class="section">
+        <div class="support-grid">
+        <section id="awards" class="section section--awards">
           <div class="section-heading">
             <h2>Honors &amp; Awards</h2>
           </div>
@@ -334,12 +371,13 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="service" class="section section--service">
           <div class="section-heading">
             <h2>Service</h2>
           </div>
           <p class="service-line">Program Committee Member: ICML 2026; ICLR 2025, 2024; AAAI 2025; CIKM 2023</p>
         </section>
+        </div>
 
         <footer class="site-footer">
           <p>
@@ -349,7 +387,7 @@
       </section>
 
       <aside class="side-column">
-        <section class="news-panel">
+        <section id="news" class="news-panel">
           <div class="section-heading">
             <h2>News</h2>
           </div>
