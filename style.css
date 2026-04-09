@@ -524,6 +524,14 @@ h1 {
     linear-gradient(135deg, rgba(243, 247, 255, 0.98), rgba(255, 255, 255, 0.92));
 }
 
+.section--awards .section-heading h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.75rem, 2.8vw, 2.15rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
 .intro-block p,
 .project-copy p,
 .paper-item p,
@@ -828,16 +836,52 @@ h1 {
   line-height: 1.6;
 }
 
-.award-list article {
-  display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
-  gap: 0.9rem;
-  align-items: center;
-  padding: 1rem;
+.award-list--plain {
+  list-style: none;
+  gap: 0.1rem;
+  padding: 0;
+  margin: 0;
 }
 
-.award-list strong {
-  line-height: 1.4;
+.award-list--plain li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.18rem 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.award-list--plain li + li {
+  border-top: 1px solid rgba(221, 231, 244, 0.72);
+  padding-top: 0.72rem;
+  margin-top: 0.38rem;
+}
+
+.award-bullet {
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-top: 0.55rem;
+  border-radius: 50%;
+  background: var(--text);
+}
+
+.award-list--plain .award-text {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.award-list--plain .award-year {
+  white-space: nowrap;
+  padding-left: 1rem;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 
 .service-line {
@@ -990,6 +1034,14 @@ h1 {
   .experience-meta div {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+
+  .award-list--plain li {
+    grid-template-columns: 18px minmax(0, 1fr);
+  }
+
+  .award-year {
+    padding-left: 0;
   }
 
   .project-media {
