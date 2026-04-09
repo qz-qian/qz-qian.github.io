@@ -859,9 +859,9 @@ h1 {
   align-items: start;
   padding: 0.18rem 0;
   font-family: "Manrope", sans-serif;
-  font-size: 1rem;
+  font-size: 0.99rem;
   line-height: 1.55;
-  color: var(--text);
+  color: #54698e;
 }
 
 .award-list--plain li + li {
@@ -881,16 +881,16 @@ h1 {
 .award-list--plain .award-text {
   text-transform: none;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .award-list--plain .award-year {
   white-space: nowrap;
   padding-left: 1rem;
-  color: var(--text);
+  color: #44597e;
   text-transform: none;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .service-line {
