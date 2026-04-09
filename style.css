@@ -745,6 +745,7 @@ h1 {
   display: inline-grid;
   gap: 0.08rem;
   min-height: auto;
+  min-width: 126px;
   padding: 0.5rem 0.82rem 0.48rem;
   border-radius: 999px;
   border: 1px solid rgba(47, 98, 217, 0.14);
@@ -760,6 +761,14 @@ h1 {
 .experience-period-start,
 .experience-period-end {
   display: block;
+}
+
+.experience-period-start {
+  white-space: nowrap;
+}
+
+.experience-period-start::after {
+  content: " -";
 }
 
 .experience-body {
