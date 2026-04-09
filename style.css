@@ -4,7 +4,7 @@
   --paper: rgba(255, 255, 255, 0.84);
   --paper-strong: rgba(255, 255, 255, 0.94);
   --text: #1d2f50;
-  --muted: #61708e;
+  --muted: #536885;
   --line: #d8e2f1;
   --line-strong: #bfd0ea;
   --accent: #2f62d9;
@@ -93,8 +93,10 @@ h3 {
 
 h1,
 .section-heading h2 {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
 }
 
 section[id],
@@ -229,7 +231,7 @@ h1 {
   max-width: 43rem;
   margin: 1.2rem 0 0;
   font-size: 1.04rem;
-  color: var(--muted);
+  color: #556a8a;
 }
 
 .hero-signals {
@@ -324,7 +326,7 @@ h1 {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #576b8a;
 }
 
 .hero-meta dd {
@@ -485,7 +487,7 @@ h1 {
 
 .section-heading h2 {
   flex: none;
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.9rem, 3.6vw, 2.45rem);
 }
 
 .section--intro {
@@ -549,7 +551,7 @@ h1 {
 .service-line,
 .site-footer p {
   margin: 0;
-  color: var(--muted);
+  color: #556a8c;
 }
 
 .intro-block p {
@@ -626,9 +628,11 @@ h1 {
   min-height: 150px;
   padding: clamp(1rem, 2vw, 1.4rem);
   border-radius: 1.4rem;
+  border: 1px solid rgba(191, 208, 234, 0.9);
   background:
-    radial-gradient(circle at top, rgba(222, 234, 255, 0.88), rgba(222, 234, 255, 0) 70%),
-    #edf3ff;
+    radial-gradient(circle at top, rgba(227, 237, 255, 0.92), rgba(227, 237, 255, 0) 68%),
+    linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
 }
 
 .project-media img {
@@ -636,6 +640,7 @@ h1 {
   max-width: 170px;
   aspect-ratio: 1;
   object-fit: contain;
+  filter: drop-shadow(0 16px 24px rgba(56, 85, 143, 0.14)) saturate(1.08) contrast(1.1);
 }
 
 .project-copy {
@@ -675,6 +680,12 @@ h1 {
 .paper-item > div {
   display: grid;
   gap: 0.45rem;
+}
+
+.paper-item h3,
+.project-copy h3,
+.timeline-item h3 {
+  color: #25395d;
 }
 
 .paper-item > div > p:last-child {
