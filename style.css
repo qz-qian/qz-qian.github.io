@@ -442,6 +442,7 @@ h1 {
 
 .support-grid {
   grid-template-columns: 1fr;
+  margin-top: 1.35rem;
 }
 
 .section,
@@ -956,6 +957,7 @@ h1 {
   display: grid;
   gap: 1rem;
   align-items: start;
+  margin-top: 1.2rem;
   padding-block: 1.1rem;
 }
 
