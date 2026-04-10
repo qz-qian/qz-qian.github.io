@@ -85,8 +85,8 @@ section[id] {
   position: sticky;
   top: 32px;
   display: grid;
-  gap: 18px;
-  padding: 24px 22px;
+  gap: 16px;
+  padding: 24px 22px 20px;
 }
 
 .section-kicker,
@@ -104,7 +104,7 @@ section[id] {
 
 .profile-avatar {
   overflow: hidden;
-  width: 148px;
+  width: 182px;
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid var(--border);
@@ -122,37 +122,40 @@ section[id] {
   font-size: 1.92rem;
   line-height: 1.06;
   letter-spacing: -0.03em;
+  margin-top: 2px;
 }
 
 .profile-contact {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   padding: 0;
   list-style: none;
 }
 
 .profile-contact li {
-  display: grid;
-  gap: 2px;
+  display: block;
 }
 
-.contact-label {
-  font-size: 0.84rem;
-  font-weight: 700;
-  color: var(--muted);
-}
-
-.profile-contact li span:last-child,
-.profile-contact a {
-  font-size: 1rem;
+.contact-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--text);
+  font-size: 1rem;
 }
 
-.profile-contact a {
-  width: fit-content;
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  color: #20242b;
+  flex: none;
 }
 
 .profile-contact a:hover {
+  color: var(--accent);
+}
+
+.profile-contact a:hover .contact-icon {
   color: var(--accent);
 }
 
@@ -382,7 +385,7 @@ section[id] {
   }
 
   .profile-avatar {
-    width: 136px;
+    width: 156px;
   }
 }
 
