@@ -89,7 +89,6 @@ section[id] {
   padding: 24px 22px;
 }
 
-.profile-tag,
 .section-kicker,
 .news-date,
 .experience-date {
@@ -99,7 +98,6 @@ section[id] {
   text-transform: uppercase;
 }
 
-.profile-tag,
 .section-kicker {
   color: var(--accent-strong);
 }
@@ -123,38 +121,36 @@ section[id] {
   letter-spacing: -0.03em;
 }
 
-.profile-role {
-  font-size: 0.98rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.profile-summary {
-  font-size: 0.98rem;
-  color: var(--muted);
-}
-
-.profile-links {
+.profile-contact {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   padding: 0;
   list-style: none;
 }
 
-.profile-links a {
-  display: block;
-  padding: 10px 12px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface-soft);
-  color: var(--text);
-  font-size: 0.94rem;
-  font-weight: 600;
+.profile-contact li {
+  display: grid;
+  gap: 2px;
 }
 
-.profile-links a:hover {
-  border-color: #c6d7ee;
-  background: #f3f7fd;
+.contact-label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.profile-contact li span:last-child,
+.profile-contact a {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.profile-contact a {
+  width: fit-content;
+}
+
+.profile-contact a:hover {
+  color: var(--accent);
 }
 
 .content-column {
