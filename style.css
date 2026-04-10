@@ -119,10 +119,11 @@ section[id] {
 }
 
 .profile-card h1 {
-  font-size: 1.92rem;
-  line-height: 1.06;
-  letter-spacing: -0.03em;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0;
   margin-top: 2px;
+  font-weight: 500;
 }
 
 .profile-contact {
