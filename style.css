@@ -256,20 +256,12 @@ section[id] {
   font-size: 0.99rem;
 }
 
-.news-item--featured p {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
 .news-burst {
-  flex: none;
-  font-size: 1.02rem;
-  line-height: 1.2;
-}
-
-.news-copy {
-  display: block;
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1;
+  transform: translateY(-0.03em);
 }
 
 .publication-item {
