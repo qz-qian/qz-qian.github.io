@@ -256,6 +256,22 @@ section[id] {
   font-size: 0.99rem;
 }
 
+.news-item--featured p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.news-burst {
+  flex: none;
+  font-size: 1.02rem;
+  line-height: 1.2;
+}
+
+.news-copy {
+  display: block;
+}
+
 .publication-item {
   display: grid;
   gap: 10px;
