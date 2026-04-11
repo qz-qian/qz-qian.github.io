@@ -355,6 +355,10 @@ section[id] {
   gap: 6px;
 }
 
+.experience-school {
+  display: block;
+}
+
 .plain-list li {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
