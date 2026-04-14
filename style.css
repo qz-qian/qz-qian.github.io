@@ -293,6 +293,17 @@ section[id] {
   color: var(--text);
 }
 
+.publication-authors sup,
+.publication-note sup {
+  font-size: 0.72em;
+  line-height: 0;
+}
+
+.publication-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
