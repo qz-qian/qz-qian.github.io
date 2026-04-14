@@ -104,7 +104,7 @@ section[id] {
 
 .profile-avatar {
   overflow: hidden;
-  width: 150px;
+  width: 132px;
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid var(--border);
@@ -402,7 +402,7 @@ section[id] {
   }
 
   .profile-avatar {
-    width: 144px;
+    width: 128px;
   }
 }
 
