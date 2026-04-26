@@ -4,7 +4,7 @@
   --line: #e5e5e5;
   --link: #52adc8;
   --link-hover: #2a7f96;
-  --sidebar: 260px;
+  --sidebar: 200px;
 }
 
 *,
@@ -67,8 +67,9 @@ section[id] {
 .masthead-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: min(1120px, calc(100% - 48px));
+  justify-content: flex-start;
+  gap: 88px;
+  width: min(1270px, calc(100% - 48px));
   min-height: 56px;
   margin: 0 auto;
   font-size: 0.9rem;
@@ -79,12 +80,8 @@ section[id] {
   font-weight: 700;
 }
 
-.masthead-inner a + a {
-  margin-left: 24px;
-}
-
 .page-shell {
-  width: min(1120px, calc(100% - 48px));
+  width: min(1270px, calc(100% - 48px));
   margin: 0 auto;
   padding: 56px 0 64px;
 }
@@ -92,7 +89,7 @@ section[id] {
 .site-grid {
   display: grid;
   grid-template-columns: var(--sidebar) minmax(0, 1fr);
-  gap: 72px;
+  gap: 64px;
   align-items: start;
 }
 
@@ -105,7 +102,7 @@ section[id] {
 
 .profile-avatar {
   overflow: hidden;
-  width: 180px;
+  width: 160px;
   aspect-ratio: 1;
   justify-self: center;
   border: 1px solid var(--line);
@@ -365,7 +362,7 @@ section[id] {
   }
 
   .profile-avatar {
-    width: 156px;
+    width: 148px;
   }
 
   .profile-contact {
@@ -382,7 +379,7 @@ section[id] {
   .masthead-inner,
   .page-shell {
     width: auto;
-    max-width: 1120px;
+    max-width: 1270px;
     margin-right: 40px;
     margin-left: 40px;
   }
